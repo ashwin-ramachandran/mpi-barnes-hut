@@ -91,7 +91,7 @@ When the position of a particle is out of the boundary, the particle is consider
 
 ## Message Passing Interface (MPI)
 
-[MPI ](https://en.wikipedia.org/wiki/Message_Passing_Interface)is standard designed for C/C++ to enable parallel computing. The code in this repo further optimizes beyond the advantages of the Barnes-Hut algorithm, by using MPI to have multiple processes partion the input work and "divide and conquer" for the most computationally expensive part of the algorithm, which is force computation on each particle. So, for example, if there are 100,000 input particles and 4 processes, then each process will be given 25,000 of the particles, and all 4 processes will parallelly compute the forces on its assigned particles, rather than having a single process sequentially compute this for 100,000 particles.
+[MPI](https://en.wikipedia.org/wiki/Message_Passing_Interface) is standard designed for C/C++ to enable parallel computing. The code in this repo further optimizes beyond the advantages of the Barnes-Hut algorithm, by using MPI to have multiple processes partion the input work and "divide and conquer" for the most computationally expensive part of the algorithm, which is force computation on each particle. So, for example, if there are 100,000 input particles and 4 processes, then each process will be given 25,000 of the particles, and all 4 processes will parallelly compute the forces on its assigned particles, rather than having a single process sequentially compute this for 100,000 particles.
 
 ## Compling & Running
 
