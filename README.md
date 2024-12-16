@@ -1,6 +1,6 @@
 # Solving an N-body problem using the Barnes-Hut algorithm & MPI
 
-The code in this repository solves an N-body problem using the Barnes-Hut algorithm. It deal with dynamic changing data as the bodies move during the simulation.
+The code in this repository solves an N-body problem using the Barnes-Hut algorithm. It deals with dynamic and changing data as the bodies move during the simulation.
 
 ## Background
 
